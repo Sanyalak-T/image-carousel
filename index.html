@@ -5,34 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Good, Cheap, Fast</title>
+    <title>Image Carousel</title>
   </head>
   <body>
-   <h2>How do you want your project to be?</h2>
-   
-   <div class="toggle-container">
-     <input type="checkbox" id="good" class="toggle">
-     <label for="good" class="label">
-       <div class="ball"></div>
-     </label>
-     <span>Good</span>
-   </div>
+    <div class="carousel">
+      <div class="image-container" id="imgs">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="first-image">
+        <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" alt="second-image">
+        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt="third-image">
+        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="fourth-image">
+      </div>
 
-   <div class="toggle-container">
-    <input type="checkbox" id="cheap" class="toggle">
-    <label for="cheap" class="label">
-      <div class="ball"></div>
-    </label>
-    <span>Cheap</span>
-  </div>
-
-  <div class="toggle-container">
-    <input type="checkbox" id="fast" class="toggle">
-    <label for="fast" class="label">
-      <div class="ball"></div>
-    </label>
-    <span>Fast</span>
-  </div>
+      <div class="buttons-container">
+        <button id="left" class="btn">Prev</button>
+        <button id="right" class="btn">Next</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
